@@ -1,0 +1,133 @@
+body{
+    background-color: #1a1a1a;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+.semua-barang{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+h1{
+    background-color: whitesmoke;
+    text-align: center;
+    color: #1a1a1a;
+
+}
+
+h2{
+    color: #ddd;
+    background-color: #333;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.item {
+    background-color: #ddd;
+    width: 250px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,5);
+}
+.item:hover{
+    transform: scale(1.02);
+}
+.item button{
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgb(2, 151, 2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.item img{
+    width: 250px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 3px solid #333;
+}
+.item button:hover{
+    transform: scale(1.05);
+}
+.item button:active{
+    transform: scale(0.98);
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8{
+    padding: 10px;
+}
+
+.keranjang{
+    align-items: center;
+    background-color: #ddd;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
+}
+
+#toggleCartButton {
+    width: 100%;
+    padding: 5px;
+    background-color: #333;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleCartButton:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+thead th{
+    color: white;
+    background-color: #333;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd){
+    background-color: #fff;
+}
+
+.totals {
+    margin: 20px;
+}
+
+.totals p{
+    font-size: 18px;
+    font-weight: bold;
+}

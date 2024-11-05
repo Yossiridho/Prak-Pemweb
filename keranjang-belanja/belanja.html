@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TOKO ONLINE</h1>
+        <div class="semua-barang">
+            <div class="item">
+                <img src="item.jpg" alt="kulkas">
+                <div class="item1">
+                    <h2 id="kulkas">Kulkas</h2>
+                    <p id="itemprice1">1.500.000</p>
+                    <button onclick="additem('kulkas','itemprice1')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="kipas">
+                <div class="item2">
+                    <h2 id="kipas">Kipas</h2>
+                    <p id="itemprice2">1.000.000</p>
+                    <button onclick="additem('kipas','itemprice2')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="sofa">
+                <div class="item3">
+                    <h2 id="sofa">Sofa</h2>
+                    <p id="itemprice3">2.500.000</p>
+                    <button onclick="additem('sofa','itemprice3')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="lemari">
+                <div class="item4">
+                    <h2 id="lemari">Lemari</h2>
+                    <p id="itemprice4">1.300.000</p>
+                    <button onclick="additem('lemari','itemprice4')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="Monitor">
+                <div class="item5">
+                    <h2 id="monitor">Monitor</h2>
+                    <p id="itemprice5">800.000</p>
+                    <button onclick="additem('monitor','itemprice5')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="helm">
+                <div class="item6">
+                    <h2 id="helm">Helm</h2>
+                    <p id="itemprice6">500.000</p>
+                    <button onclick="additem('helm','itemprice6')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="blender">
+                <div class="item7">
+                    <h2 id="blender">Blender</h2>
+                    <p id="itemprice7">350.000</p>
+                    <button onclick="additem('blender','itemprice7')">Tambah Barang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="item.jpg" alt="microwave">
+                <div class="item8">
+                    <h2 id="microwave">Microwave</h2>
+                    <p id="itemprice8">500.000</p>
+                    <button onclick="additem('microwave','itemprice8')">Tambah Barang</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="keranjang" id="keranjang">
+            <button id="toggleCartButton" onclick="toggleKeranjang()">&#9660;</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nama barang</th>
+                        <th>harga</th>
+                        <th>aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="itemList"></tbody>
+            </table>
+            <div class="totals">
+                <p>subtotal : <span id="subtotal">Rp 0</span></p>
+                <p>setelah diskon : <span id="total">Rp 0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
